@@ -6,7 +6,7 @@ let int = null;
 
 document.getElementById("start-timer").addEventListener("click", () => {
   if (int !== null) {
-    clearInterval();
+    clearInterval(int);
   }
 
   int = setInterval(displayTimer, 10);
